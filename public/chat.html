@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Socket IO</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <button type="button" class="logout" id="logout">Logout</button>
+                <div id="username">
+                    Olá username - Sala
+                </div>
+                <hr />
+
+                <div id="chat_content">
+                    <div class="messages" id="messages">
+<!--                        <div class="new-message">-->
+<!--                            <label class="form-label">-->
+<!--                                <strong> Username </strong> <span> texto - 10/10 10:20 </span>-->
+<!--                            </label>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <input class="form-control" type="text" placeholder="DIgite sua mensagem" id="message-input" />
+            <footer>
+            </footer>
+        </div>
+    </body>
+
+<!--    <script src="/socket.io/socket.io.js"></script>-->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+            integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+            crossorigin="anonymous"></script>
+    <script src="chat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"
+            integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
